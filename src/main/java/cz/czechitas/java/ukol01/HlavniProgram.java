@@ -7,7 +7,7 @@ public class HlavniProgram {
 
     public void start() {
     }
-        public void nakresliPrasatko() {
+       /* public void nakresliPrasatko() {
             Turtle zofka = new Turtle();
 
             zofka.move(120);
@@ -63,10 +63,74 @@ public class HlavniProgram {
             zofka.move(40);
 
         }
+*/
 
+  public void osmisten () {
+        Turtle zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.penDown();
+
+        zofka.turnLeft(90);
+
+        for (int i = 0; i < 8; i++) {
+            zofka.move(50);
+            zofka.turnRight(45);
+        }
+    }
+
+
+   public void kruh (){
+        Turtle zofka = new Turtle();
+        zofka.penUp();
+        zofka.turnRight(180);
+        zofka.move(90);
+        zofka.penDown();
+
+        nakresliKolecko(20, 20, zofka, 10);
+
+
+    }
+
+    private static void nakresliKolecko(int x, int x1, Turtle zofka, int pixels) {
+        for (int i = 0; i < x; i++) {
+            zofka.move(pixels);
+            zofka.turnRight(x1);
+        }
+    }
+
+    public void slunicko(){
+        Turtle zofka = new Turtle();
+        zofka.penUp();
+        zofka.move(200);
+        zofka.turnRight(90);
+        zofka.move(40);
+        zofka.penDown();
+
+        for (int i = 0; i < 9; i++) {
+            zofka.move(10);
+            zofka.turnRight(20);
+            zofka.move(10);
+            zofka.turnRight(20);
+            zofka.turnLeft(90);
+            zofka.move(15);
+            zofka.turnRight(180);
+            zofka.penUp();
+            zofka.move(15);
+            zofka.turnLeft(90);
+            zofka.penDown();
+        }
+
+
+
+    }
         public static void main(String[] args) {
             new HlavniProgram().start();
-            new HlavniProgram().nakresliPrasatko();
+           // new HlavniProgram().nakresliPrasatko();
+            new HlavniProgram().osmisten();
+            new HlavniProgram().kruh();
+            new HlavniProgram().slunicko();
 
         }
 
