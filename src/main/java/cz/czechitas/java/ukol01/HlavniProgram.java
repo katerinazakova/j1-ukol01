@@ -4,8 +4,11 @@ import cz.czechitas.java.ukol01.engine.*;
 
 public class HlavniProgram {
 
-    public void nakresliPrasatko() {
-        Turtle zofka = new Turtle();
+
+    public void start() {
+    }
+        public void nakresliPrasatko() {
+            Turtle zofka = new Turtle();
 
             zofka.move(120);
             zofka.turnRight(180);
@@ -43,25 +46,28 @@ public class HlavniProgram {
             zofka.move(120);
 
 
-        //TODO implementace domácího úkolu
-    }
+            //TODO implementace domácího úkolu
 
-    private static void nozkyOdPrasatka(Turtle zofka) {
-        zofka.turnRight(60);
-        zofka.move(40);
-        zofka.penUp();
-        zofka.turnLeft(180);
-        zofka.move(40);
-        zofka.turnLeft(120);
-        zofka.penDown();
-        zofka.move(40);
-        zofka.turnLeft(180);
-        zofka.penUp();
-        zofka.move(40);
-    }
+        }
+    private static void nozkyOdPrasatka (Turtle zofka){
+            zofka.turnRight(60);
+            zofka.move(40);
+            zofka.penUp();
+            zofka.turnLeft(180);
+            zofka.move(40);
+            zofka.turnLeft(120);
+            zofka.penDown();
+            zofka.move(40);
+            zofka.turnLeft(180);
+            zofka.penUp();
+            zofka.move(40);
 
-    public static void main(String[] args) {
-        new HlavniProgram().nakresliPrasatko();
-    }
+        }
+
+        public static void main(String[] args) {
+            new HlavniProgram().start();
+            new HlavniProgram().nakresliPrasatko();
+
+        }
 
 }
