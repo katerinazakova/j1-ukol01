@@ -96,7 +96,6 @@ public class HlavniProgram {
 
         nakresliKolecko(20, 20, zofka, 10);
 
-
     }
 
     private static void nakresliKolecko(int x, int x1, Turtle zofka, int pixels) {
@@ -116,7 +115,6 @@ public class HlavniProgram {
 
         nakresliSlunicko(zofka);
 
-
     }
 
     private static void nakresliSlunicko(Turtle zofka) {
@@ -134,7 +132,6 @@ public class HlavniProgram {
             zofka.penDown();
         }
     }
-
 
     public void obrazek(){
         Turtle zofka = new Turtle();
@@ -296,7 +293,6 @@ public class HlavniProgram {
         zofka.turnLeft(90);
         zofka.penDown();
     }
-
     public static void main(String[] args) {
             new HlavniProgram().start();
             //new HlavniProgram().nakresliPrasatko();
